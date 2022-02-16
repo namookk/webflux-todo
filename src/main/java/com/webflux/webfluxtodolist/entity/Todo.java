@@ -28,4 +28,17 @@ public class Todo{
 
     @Column(name = "updid")
     private String modifiedBy;
+
+    @Override
+    public String toString() {
+        return "Todo{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                ", done=" + done +
+                ", createdAt=" + createdAt +
+                ", createdBy='" + createdBy + '\'' +
+                ", modifiedAt=" + modifiedAt +
+                ", modifiedBy='" + modifiedBy + '\'' +
+                '}';
+    }
 }
